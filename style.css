@@ -1,0 +1,99 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f0dc; /* beige clair */
+    color: #333;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    background-color: #e0d4b0; /* beige un peu plus foncé */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center; /* centre verticalement logo et bouton */
+    gap: 15px; /* espace entre logo et bouton */
+  }
+  
+  .logo {
+    color: #6b4f1d;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Bouton Home */
+  #menu button {
+    background: #d1c295; /* beige moyen */
+    border: 2px solid #bfa86f;
+    color: #6b4f1d;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #menu button:hover {
+    background-color: #bfa86f; /* un peu plus foncé au survol */
+    color: #fff;
+  }
+  
+  /* ===== SECTION ===== */
+  .section {
+    padding: 120px 20px 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  /* Section produits */
+  .products {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    background-color: #d1c295; /* beige foncé */
+    color: #6b4f1d;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-container .social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-container .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Défilement fluide */
+  html {
+    scroll-behavior: smooth;
+  }
+  
