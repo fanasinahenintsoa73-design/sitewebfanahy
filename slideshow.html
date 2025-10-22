@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow - Industrial Stone MDG</title>
+    <style>
+        /* Style de base pour le slideshow */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0dc;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Cache toutes les slides */
+        .slide {
+            display: none;
+        }
+
+        /* Affiche seulement la slide active */
+        .slide.active {
+            display: block;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Boutons précédent/suivant */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .prev-button {
+            left: 10px;
+        }
+
+        .next-button {
+            right: 10px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Compteur de slides */
+        .slide-counter {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #6b4f1d;
+        }
+
+        /* Points indicateurs */
+        .dots-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: #6b4f1d;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #6b4f1d;">Galerie Photos</h1>
+    
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="./images/sary1.jpg" alt="Photo 1">
+        </div>
+        <div class="slide">
+            <img src="./images/sary2.jpg" alt="Photo 2">
+        </div>
+        <div class="slide">
+            <img src="./images/sary3.jpg" alt="Photo 3">
+        </div>
+        <div class="slide">
+            <img src="./images/sary4.jpg" alt="Photo 4">
+        </div>
+        <div class="slide">
+            <img src="./images/sary5.jpg" alt="Photo 5">
+        </div>
+    
+        <button class="nav-button prev-button" onclick="changeSlide(-1)">❮</button>
+        <button class="nav-button next-button" onclick="changeSlide(1)">❯</button>
+    
+        <div class="slide-counter">
+            <span id="current">1</span> / <span id="total">5</span>
+        </div>
+    
+        <div class="dots-container" id="dotsContainer"></div>
+    </div>
+
+    <!-- CECI EST SUPER IMPORTANT : LE LIEN VERS TON JAVASCRIPT -->
+    <script src="js-photo-slider.js"></script>
+</body>
+</html>

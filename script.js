@@ -13,3 +13,11 @@ btnHome.addEventListener("click", () => {
   const homeSection = document.getElementById("home");
   homeSection.scrollIntoView({ behavior: "smooth" });
 });
+
+
+
+
+
+
+
+
