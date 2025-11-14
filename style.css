@@ -98,13 +98,6 @@ body {
   }
 
 
-
-
-  #home h2 {
-    margin-top: 80px; /* Hauteur de la navbar + un peu d'espace */
-    /* ... reste du style ... */
-}
-/* Pour le conteneur #home */
 #home {
   text-align: left;
   padding: 40px 25px;
@@ -122,4 +115,25 @@ body {
   text-align: left;
   font-style: normal;
   letter-spacing: 0.3px; /* Petit espacement entre les lettres */
+ 
+
+  font-weight: 700; /* Gras comme la photo */
+  font-size: 2em; /* Taille grande */
+  letter-spacing: -0.3px; /* Lettres légèrement rapprochées */
+  font-style: normal; /* PAS italic - droit comme la photo */
+  
+    margin-top: 80px; /* Hauteur de la navbar + un peu d'espace */
+    /* ... reste du style ... */
+
 }
+
+
+
+
+
+
+
+
+
+
+
