@@ -187,57 +187,64 @@ body {
 
 
 
+
+
+
 .footer-container {
   background-color: #c7b187;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;  /* 2 colonnes sur PC */
+  grid-template-columns: 1fr 1fr; /* deux colonnes sur PC */
   gap: 20px;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
-/* Centrer les éléments */
-.footer-container div {
+/* Conteneurs internes */
+.footer-container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+/* Lien Facebook */
+.social-link {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;  /* empêche le texte de passer à la ligne */
 }
 
 /* Icône Facebook */
 .icon {
-  width: 30px;
-  margin-right: 8px;
+  width: 28px;
 }
 
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+/* Style des textes */
+.contact p {
+  margin: 5px 0;
+  font-size: 16px;
+  white-space: nowrap; /* évite les coupures de texte */
 }
 
-/* Responsive pour téléphone */
+/* Responsive téléphone */
 @media (max-width: 600px) {
   .footer-container {
-      grid-template-columns: 1fr; /* 1 colonne */
-      text-align: center;
+      grid-template-columns: 1fr; /* une seule colonne */
+      gap: 15px;
   }
 
   .social-link {
-      flex-direction: column; /* icône au-dessus du texte */
+      flex-direction: row; /* icône reste à gauche */
+      justify-content: center;
   }
 
-  .icon {
-      margin: 0 0 8px 0;
+  .contact p {
+      white-space: normal; /* autorise le retour à la ligne sur mobile */
+      text-align: center;
   }
 }
-
-
-
-
-
-
-
