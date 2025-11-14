@@ -96,23 +96,30 @@ body {
   html {
     scroll-behavior: smooth;
   }
-  
 
-/* Style pour le conteneur du titre */
+
+
+
+  #home h2 {
+    margin-top: 80px; /* Hauteur de la navbar + un peu d'espace */
+    /* ... reste du style ... */
+}
+/* Pour le conteneur #home */
 #home {
-  text-align: center; 
-  padding: 80px 50px; 
+  text-align: left;
+  padding: 40px 25px;
+  background-color: #F5E6D3; /* Fond beige clair */
 }
 
-/* STYLE DU H2 AVEC POLICE "OSWALD" ET INCLINAISON */
+/* Pour le H2 - titre principal */
 #home h2 {
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 700; 
-  font-size: 3.5em; 
-  color: #333; 
-  line-height: 1.2; 
+  font-family: 'Google Sans', 'Product Sans', sans-serif;
+  font-weight: 400; /* Normal, pas gras */
+  font-size: 1.75em; /* Taille similaire à la photo */
+  color: #333;
+  line-height: 1.35; /* Espacement des lignes comme la photo */
   margin-bottom: 20px;
-
-  /* NOUVEAU : Rend le texte légèrement incliné */
-  font-style: italic; /* Ou 'oblique' pour une inclinaison moins prononcée si la police ne possède pas un vrai style italique */
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.3px; /* Petit espacement entre les lettres */
 }
