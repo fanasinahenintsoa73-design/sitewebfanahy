@@ -130,50 +130,54 @@ body {
 
 
 
-
-
-
-
-
-
-/* Container principal avec Grid */
+/* Container principal */
 #home {
   display: grid;
-  grid-template-columns: 1fr; /* 1 colonne sur mobile */
-  gap: 20px;
-  padding: 120px 20px 40px 20px;
+  place-items: start; /* Aligne tout en haut à gauche */
+  padding: 120px 20px 40px;
   background-color: #EDE4D3;
-  max-width: 100%; /* Tsy hiala amin'ny écran */
-  overflow-x: hidden; /* Tsy hikorotana horizontalement */
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-/* Texte container */
-#home h2,
-#home p,
-#home ul {
-  max-width: 100%;
-  word-wrap: break-word; /* Manapaka ny teny lava */
-  overflow-wrap: break-word;
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 
-#home h2 {
+/* Header titre */
+.home-header h2 {
   font-family: 'Google Sans', sans-serif;
   font-weight: 700;
-  font-size: 1.8em; /* Kely kokoa ho an'ny mobile */
+  font-size: 1.8em;
   line-height: 1.3;
-  margin: 0 0 20px 0;
+  color: #2d2d2d;
+  margin: 0;
 }
 
-/* Desktop/Tablette - 2 colonnes */
+/* Contenu texte */
+.home-content {
+  display: grid;
+  gap: 20px;
+}
+
+.home-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Desktop - 2 colonnes si besoin */
 @media (min-width: 768px) {
-  #home {
-      grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-      gap: 40px;
-      padding: 120px 50px 60px;
+  .home-header h2 {
+      font-size: 2.5em;
   }
   
-  #home h2 {
-      font-size: 2.2em; /* Lehibe kokoa amin'ny desktop */
+  .home-content {
+      grid-template-columns: 1fr 1fr; /* 2 colonnes */
+      gap: 40px;
   }
 }
